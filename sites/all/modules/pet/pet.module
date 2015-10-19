@@ -1,0 +1,18 @@
+<?php
+function pet_menu() {
+    $items = array();
+    $items['pet'] = array(
+        'title' => "My favorite pet",
+        'page callback' => 'pet_info',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+        );
+    return $items;
+}
+
+function pet_info() {
+    return '
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/PortugiesischerWasserhund-LindoDaEstrelaDoMar.jpg" alt="" />
+    <a href="https://en.wikipedia.org/wiki/Portuguese_Water_Dog">Wikipedia info.</a>
+    ';
+}

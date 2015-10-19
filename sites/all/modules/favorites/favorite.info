@@ -1,0 +1,5 @@
+name = Favortie
+description = favorite stuff
+package = Epicodus Examples
+core = 7.x
+files[] = favorite.module
